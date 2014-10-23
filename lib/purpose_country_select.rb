@@ -10,7 +10,7 @@ module PurposeCountrySelect
   COUNTRIES = {}
   DONATION_COUNTRIES = {}
 
-  CSV_HEADERS = ['iso','en','es','pt','fr']
+  CSV_HEADERS = ['iso','en','es','pt','fr','de','nl','ca']
   USES_POSTCODE = 'uses-postcode'
   DEFAULT_LOCALE = 'en'
   LANGUAGES = CSV_HEADERS - ['iso']
