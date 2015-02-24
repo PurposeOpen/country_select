@@ -22,7 +22,10 @@ module ActionView
 
       # Return select and option tags for the given object and method, using country_options_for_select to generate the list of option tags.
       def country_select(object, method, options = {}, html_options = {})
-        select_tag("#{object}[#{method}]", country_options_for_select(nil, options), html_options.stringify_keys)
+        select_tag("#{object}[#{method}]",
+          country_options_for_select(
+            html_options.with_indifferent_access[:selected], options),
+          html_options.stringify_keys)
       end
 
       # Returns a string of option tags for pretty much any country in the world. Supply a country name as +selected+ to

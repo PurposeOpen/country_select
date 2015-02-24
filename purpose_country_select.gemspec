@@ -15,6 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = PurposeCountrySelect::VERSION
   gem.add_dependency "actionpack", "> 3.2.0"
+  gem.add_dependency "activesupport", "> 3.2.0"
   gem.add_dependency "sort_alphabetical"
 
   gem.add_development_dependency "rspec"
